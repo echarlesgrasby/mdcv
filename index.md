@@ -10,10 +10,10 @@ classoption: "12pt"
 
 ## Contact
 
-+ [Email](mailto:ecgrasby@ualr.edu)
-+ [Personal Website](https://echarlesgrasby.github.io)
-+ [Github](https://github.com/echarlesgrasby)
-+ [LinkedIn](https://www.linkedin.com/in/eric-grasby-335617111)
++ [Email: ecgrasby@ualr.edu](mailto:ecgrasby@ualr.edu)
++ [Personal Website: https://echarlesgrasby.github.io](https://echarlesgrasby.github.io)
++ [Github: https://github.com/echarlesgrasby](https://github.com/echarlesgrasby)
++ [LinkedIn: https://www.linkedin.com/in/eric-grasby-335617111](https://www.linkedin.com/in/eric-grasby-335617111)
 
 ## Education 
 
@@ -23,15 +23,15 @@ classoption: "12pt"
 
 ## Work Experience
 
-+ Database Developer, Analyst, Merkle Inc., June 2018 - Present
++ ### Database Developer, Analyst, Merkle Inc., June 2018 - Present
 
     + Work on an Agile development team that maintains a large foundational marketing platform for a Fortune 500 company, as well as support other adhoc internal projects. 
 
-+ Database Developer, Intern. Merkle Inc., June 2017 - May 2018
++ ### Database Developer, Intern. Merkle Inc., June 2017 - May 2018
 
     + Worked as an intern developer on an Agile development team for a financial services client. 
 
-+ Due Diligence Analyst, Intern. Fund For Arkansas' Future, LLC., September 2015 - December 2017
++ ### Due Diligence Analyst, Intern. Fund For Arkansas' Future, LLC., September 2015 - December 2017
 
     + Worked as an analyst intern, peforming due diligence prospective investments into tech-enabled startup companies. FAF, at the time, was the largest (by capital assets) technology angel investment group in the State of Arkansas. 
 
@@ -44,9 +44,9 @@ classoption: "12pt"
     + SAS DataFlux Data Management Studio
 + Scripting Languages: 
     + Powershell ( v2, v5 )
+    + Python 3.x
     + bash/sh/ksh 
     + awk
-    + Python 3.x
 + General Programming: 
     + Visual C#
     + Java

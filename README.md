@@ -9,11 +9,12 @@ This project is built and rendered via a Makefile in the project directory, whic
  * Pandoc
  * bash
  * LaTeX
+ * make
 
 ## Build Instructions
 
 Compile with the following:
 
- ```make compile && sudo make install ```
+ ```make compile```
 
-That's it. Once the build process completes, copy the output files to your webhost via SFTP.   
+That's it. Once the build process completes, copy the output files to your webhost via FTP.   
