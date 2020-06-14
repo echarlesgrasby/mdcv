@@ -1,3 +1,11 @@
-compile:
-		pandoc index.md -s -c custom-styles.css --toc -o index.html
-		pandoc index.md --template=template.tex	--pdf-engine=xelatex -o eric-charles-grasby-resume.pdf
+
+DOCUMENT = ecg.resume.tex
+
+all:
+	pdflatex $(DOCUMENT)
+
+clean:
+	rm $(DOCUMENT:.tex=.pdf) $(DOCUMENT:.tex=.out) $(DOCUMENT:.tex=.aux) $(DOCUMENT:.tex=.log)
+
+clean-keep-pdf:
+	rm $(DOCUMENT:.tex=.out) $(DOCUMENT:.tex=.aux) $(DOCUMENT:.tex=.log)

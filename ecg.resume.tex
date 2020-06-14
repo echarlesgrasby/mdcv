@@ -1,0 +1,140 @@
+% Eric Charles Grasby - Resume
+
+% Last Revision Date: 2020-04-26
+
+%%%% ============== BEGIN PREAMBLE ================== %%%%
+\documentclass[11pt]{article}
+
+% package imports
+\usepackage{textcase}
+\usepackage{anyfontsize}
+\usepackage{enumitem}
+\usepackage{wasysym}
+\usepackage{relsize}
+\usepackage{titlesec}
+\usepackage[margin=0.5in]{geometry}
+
+\titlespacing*{\section}{0pt}{2ex}{0ex}
+\titlespacing*{\subsection}{0pt}{0ex}{-0.5ex}
+\titlespacing*{\subsubsection}{0pt}{0ex}{-0.5ex}
+
+\newcommand{\ualr}{University of Arkansas at Little Rock}
+\newcommand{\uppr}[3]{ \noindent\MakeUppercase{{\fontsize{#2}{#3} \selectfont {#1}}} }
+\author{Eric Charles Grasby}
+
+%%%% ============== END PREAMBLE ================== %%%%
+
+\begin{document}
+\pagenumbering{gobble}
+\begin{center}
+\uppr{\textbf{Eric Charles Grasby}}{24}{28}
+\vfill
+Little Rock, AR \hfill \textbf{email} ecgrasby@ualr.edu \hfill \textbf{web} https://echarlesgrasby.xyz
+\noindent \rule{1.0\textwidth}{0.4pt}
+\end{center}
+
+\section*{\uppr{Education}{14}{16}} \noindent \rule{1.0\textwidth}{0.4pt}
+\textbf{Masters of Science, Information Quality} \hfill \textit{August 2017 - May 2020 (Anticipated Graduation)} \\
+\ualr \\ \\
+\textbf{Bachelors of Science, Information Science} \hfill \textit{August 2014 - May 2018} \\
+\ualr
+
+\section*{\uppr{Work Experience}{14}{16}} \noindent \rule{1.0\textwidth}{0.4pt}
+\subsection*{Programmer/Analyst - IT Applications, Reliability}
+Southwest Power Pool. Little Rock, AR \hfill \textit{May 2020 - Present} \\
+\begin{itemize}
+	\item Southwest Power Pool is a Regional Transmission Organization (RTO) that manages the bulk electric grid for utility and transmission companies across 14 US States.
+\end{itemize}
+
+FORTHCOMING
+\\
+
+\subsection*{Database Developer - Analyst}
+Merkle Incorporated. Little Rock, AR \hfill \textit{May 2018 - May 2020} \\
+\begin{itemize}
+\item Merkle is a data-driven, tech-enabled marketing agency that, as of 2020, has over 10,000 employees
+ \begin{itemize}
+   \item Work on a development team that maintains both a large foundational marketing platform and a SOAP-based web service solution for a Fortune 500 financial company. As a developer, I often directly interface with client-side partners.
+   \item Developed a tracking mechanism for a legacy campaign process that interfaced directly with our client's staff analysts.
+   \item Used Powershell to develop adhoc scripts for process monitoring that were distributed to multiple teams at Merkle.
+   \item Designed and wrote a custom monitoring script in Powershell to help ensure up-time of a web service solution that required availability 18 hours a day, seven days a week.
+   \item Co-developed, with our team's tech lead, a data warehousing process in SQL Server to consolidate and match 500+ million back-logged records with a Merkle product database. This process has since been running on a weekly basis.
+ \end{itemize}
+\end{itemize}
+
+\subsection*{Database Developer - Intern}
+Merkle Incorporated. Little Rock, AR \hfill \textit{June 2017 - May 2018} \\
+\begin{itemize}
+ \item Migrated a shared library of bash and ksh scripts, used for campaign fulfillment, as part of a parallel server migration. Additionally, I isolated them into development and production environments.
+ \item Implemented new weekly data feeds (approximately 200K records) into our solution's campaign selection warehouse
+ \item Worked on a project to retire and update fields across a campaign fulfillment process. This involved scripting changes to 25+ different SQL Server database tables, stored procedures, and SSIS packages.
+\end{itemize}
+
+\subsection*{Due Diligence Analyst - Intern}
+Fund For Arkansas' Future II, LLC (FAFII). Little Rock, AR \hfill \textit{September 2015 - December 2017} \\
+\begin{itemize}
+\item FAFII was an angel investment fund that infused seed capital into technology-based Arkansas startup companies. At the time, by capital assets, FAFII was the largest angel investment group in Arkansas.
+ \begin{itemize}
+  \item Authored comprehensive due diligence and market analysis reports on prospect companies.
+  \item Took notes on company investment pitches and used those notes to help form questions for due diligence research.
+  \item Worked directly with the Executive Director and Investment Committee to conduct follow-up interviews with startup company representatives (often the C-suite team) and industry experts.
+  \item Maintained mission critical documentation for the fund, such as the Yearly Investor Report.
+ \end{itemize}
+\end{itemize}
+
+\subsection*{Machine Operator}
+Delta Well Screen Company, Incorporated. Jacksonville, AR \hfill \textit{Seasonal Position (Summers 2012-2016)} \\
+
+\section*{\uppr{Technical Strengths}{14}{16}} \noindent\rule{1.0\textwidth}{0.4pt}
+%%%% ============ BEGIN TECHNICAL SKILLS ========================= %%%%
+\setlength{\leftmargini}{0pt}
+\begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+
+\item \textbf{Database Development}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item SQL, MS SQL Server, SQL Server Integration Services (SSIS), SAS DataFlux Data Management Studio
+  \end{enumerate}
+\item \textbf{Scripting Languages}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item Powershell (v2, v5), bash/sh/ksh, Python 3.x, awk
+  \end{enumerate}
+\item \textbf{Object-Oriented Languages}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item C\# \textit{(some experience)}, Java \textit{(academic experience)}
+  \end{enumerate}
+\item \textbf{Markup Languages}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item HTML5, CSS3, Markdown, {\LaTeX}
+  \end{enumerate}
+\item \textbf{Operating Systems}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item MS Windows 10, Windows Server 2016, Linux (RHEL, Ubuntu)
+  \end{enumerate}
+\item \textbf{Code Management}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item SVN/TortoiseSVN, WinMerge, Atlassian JIRA
+  \end{enumerate}
+\item \textbf{Documentation}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item MS Word, MS Excel, MS Visio, Atlassian Confluence, Adobe RoboHelp
+  \end{enumerate}
+\item \textbf{General Tooling}
+  \begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+  \item PuTTY, WinSCP, Vim, Notepad++, VS Code, Postman, Tableau, Linux coreutils (cp, find, gzip, grep, ssh, tar, etc.)
+  \end{enumerate}
+
+\end{enumerate}
+%%%% ============  END TECHNICAL SKILLS ========================= %%%%
+
+\section*{\uppr{Projects}{14}{16}}\noindent \rule{1.0\textwidth}{0.4pt}
+(github) https://github.com/echarlesgrasby - My public github repositories \\
+(this r\`esum\`e \textscale{1.5}{\smiley}) https://github.com/echarlesgrasby/mdcv - Written in {\LaTeX}
+\section*{\uppr{Accolades}{14}{16}}\noindent \rule{1.0\textwidth}{0.4pt}
+\setlength{\leftmargini}{0pt}
+\begin{enumerate}[topsep=0pt, partopsep=0pt, label=\null]
+\item Graduated Cum Laude. Masters of Science, \ualr \hfill \textit{May 2020}
+\item Graduated Magna Cum Laude. Bachelors of Science, \ualr \hfill \textit{May 2018}
+\item Eagle Scout. BSA Troop 770. Sherwood, Arkansas \hfill \textit{October 2009}
+\end{enumerate}
+
+\end{document}

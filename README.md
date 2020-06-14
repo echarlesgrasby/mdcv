@@ -1,20 +1,19 @@
 # mdcv
 
-My attempt at versioning a personal website and my resume using Markdown and Pandoc. Inspired by Luke Smith, himself. 
+## Purpose
 
-This project is built and rendered via a Makefile in the project directory, which invokes Pandoc and creates an HTML website (using styles specified in styles.css) and a static .PDF file suitable for printing. 
+This is simply a repository to track any changes that I make to my print resume. It is written in LaTeX and I compile it into a PDF whenever I want to make changes to it.
 
-## Dependencies 
+This repository was originally used for versioning a resume from Markdown, but I've since scrapped that and re-written the entire thing as a LaTeX doc. 
 
- * Pandoc
- * bash
- * LaTeX
- * make
+## Compile
+ _these are really just notes for myself.._
 
-## Build Instructions
+ * Linux (uses a Makefile)
+	- To build this on linux, pull the repo down locally and ensure that pdflatex is installed.
+	- Run make all && make-keep-pdf
 
-Compile with the following:
+ * Windows (uses a Powershell script)
+	- To build this on your windows machine, pull the repo down locally and ensure that pdflatex and SumatraPDF are installed.
+	- In a powershell session, run this invocation in the resume directory: _make_resume.ps1 "N"_
 
- ```make compile```
-
-That's it. Once the build process completes, copy the output files to your webhost via FTP.   
