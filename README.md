@@ -19,10 +19,11 @@ This repository was originally used for versioning a resume from Markdown, but I
 ### Setup Notepad++ Shortcut
  _these are really just notes for myself for when I inevitably have to setup another Notepad++ shortcut_
  
-	1. Select Run from the toolbar (or strike F5) 
-		* ![Select Run](./screenshot/create_npp_shortcut_1.png)
-	2. Input the following one-liner, giving the path where the .ps1 script is located:
-		* ```powershell.exe -file "D:\repos\mdcv\make-resume.ps1"```
-		*![Input script one-liner](./screenshot/create_npp_shortcut_2.png)
-	3. Set Shortcut Parameters (including keystrokes)
-		* ![Shortcut Parameters](./screenshot/create_npp_shortcut_3.png)
+1. Select Run from the toolbar (or strike F5) 
+![Select Run](/screenshot/create_npp_shortcut_1.png)
+2. Input the following one-liner, giving the path where the .ps1 script is located:
+* ```powershell.exe -file "D:\repos\mdcv\make-resume.ps1"```
+![Input script one-liner](/screenshot/create_npp_shortcut_2.png)
+3. Set Shortcut Parameters (including keystrokes)
+![Shortcut Parameters](/screenshot/create_npp_shortcut_3.png)
+
