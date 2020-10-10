@@ -1,5 +1,5 @@
 
-DOCUMENT = ecg.resume.tex
+DOCUMENT = ./code/ecg.resume.tex
 
 all:
 	pdflatex $(DOCUMENT)

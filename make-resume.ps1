@@ -1,4 +1,4 @@
-Param($paramDebug="N")
+Param([string]$paramDebug="N")
 <#
 ==========================================================================
 eric c grasby
@@ -11,29 +11,40 @@ The script builds the PDF, outputs all the compile-time info to STDOUT, and then
 ==========================================================================
 #>
 
-cd "D:\sandbox\latex\resume\"
-$sourceCode=".\ecg.resume.tex"
+$codeDir="D:\repos\mdcv\code"
+$sourceCode="$codeDir\ecg.resume.tex"
 $debug=$paramDebug
+cd $codeDir
 
 if (Test-Path "$sourceCode"){ 
 	pdflatex "$sourceCode";
 	Write-Output "------ ------" 
 	Write-Output "Press any key to exit.." 
 	
-<#
-  LaTeX is very verbose and outputs a bunch of build information whenever you execute a build..
-  If debug != "Y", remove the extra output files to just leave the .tex source and the PDF output
-#>
-	if ($debug -ne "Y"){ 
-	  $removeItem=$sourceCode -replace ".tex" ".log"; Remove-Item $removeItem
-	  $removeItem=$sourceCode -replace ".tex" ".aux"; Remove-Item $removeItem
+	<#
+		LaTeX is very verbose and outputs a bunch of build information whenever you execute a build..
+		If debug != "Y", remove the extra output files to just leave the .tex source and the PDF output
+	#>
+	if ($debug -ne "Y"){
+	  ##==remove log==##
+	  $removeItem=$sourceCode.Replace(".tex",".log");
+      Remove-Item $removeItem; echo "Removing $removeItem.."
+	  
+	  ##==remove aux==##
+	  $removeItem=$sourceCode.Replace(".tex",".aux");
+      Remove-Item $removeItem; echo "Removing $removeItem"
 	}
 
-	while( ! [System.Console]::ReadKey().Key){ }
-	exit 0
+	cd ..\
+	$PDF=$sourceCode.Replace(".tex",".pdf")
+	Remove-Item *pdf
+	Move-Item $PDF .\
+	
+	$host.ui.RawUI.ReadKey() > $null
+	[Environment]::Exit(0);
 }
 else{
-Write-Output "$sourceCode does not exist!"
-while( ! [System.Console]::ReadKey().Key){ }
-exit 1
+    Write-Output "$sourceCode does not exist!"
+    $host.ui.RawUI.ReadKey() > $null
+	[Environment]::Exit(1);
 }
