@@ -1,5 +1,17 @@
 
 DOCUMENT = ./code/ecg.resume.tex
+DOCKERFILE = ./Dockerfile
+
+.PHONY: doc-build doc-run doc-clean
+
+doc-build:
+	docker build - < $(DOCKERFILE) --tag resume-builder:latest
+
+doc-run:
+	docker run -t -i -v `pwd`:/app debian:latest /bin/bash
+
+doc-clean:
+	docker rm debian:latest
 
 all:
 	pdflatex $(DOCUMENT)
