@@ -1,8 +1,10 @@
 # Ignore PDF
 *.pdf
 
-# Ignore html outputs 
+# Ignore pdflatex build outputs 
 *.html
+*.aux
+*.log
 
 # Ignore man folder which is used for manual edits/builds
-./code/man/*.*
+code/man/*
