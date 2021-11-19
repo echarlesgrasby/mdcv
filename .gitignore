@@ -3,3 +3,6 @@
 
 # Ignore html outputs 
 *.html
+
+# Ignore man folder which is used for manual edits/builds
+./code/man/*.*
