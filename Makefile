@@ -14,7 +14,7 @@ doc-clean:
 	docker rm debian:latest
 
 all:
-	pdflatex $(DOCUMENT)
+	pdflatex -interaction=nonstopmode $(DOCUMENT)
 
 clean:
 	rm $(DOCUMENT:.tex=.pdf) $(DOCUMENT:.tex=.out) $(DOCUMENT:.tex=.aux) $(DOCUMENT:.tex=.log)
