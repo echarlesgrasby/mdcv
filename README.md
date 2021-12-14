@@ -6,6 +6,12 @@ This is simply a repository to track any changes that I make to my print resume.
 
 This repository was originally used for versioning a resume from Markdown, but I've since scrapped that and re-written the entire thing as a LaTeX doc. 
 
+## Future Enhancements
+
+* Get a Dockerized container working to compile the .tex file
+* Integrate Docker build as a Github Action
+* Setup a hook to build on merges to `master` and tag the master build with a new version each time (probably from a __version__ file). 
+
 ## Compile
 
  * Linux (uses a Makefile)
