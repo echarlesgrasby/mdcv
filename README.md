@@ -1,42 +1,9 @@
-# mdcv
+# mdcv 
 
-## Purpose
+This is a repository to hold the updates that I make to the `print` version of my CV. Originally the idea was to do this in markdown (hence the name `mdcv` --> "Markdown CV"). 
 
-This is simply a repository to track any changes that I make to my print resume. It is written in LaTeX and I compile it into a PDF whenever I want to make changes to it.
+This version uses 100%, grass-fed, LaTeX <3.
 
-This repository was originally used for versioning a resume from Markdown, but I've since scrapped that and re-written the entire thing as a LaTeX doc. 
+I pull these files into a session on Overleaf.com to update and compile the PDF. 
 
-## Future Enhancements
-
-* Get a Dockerized container working to compile the .tex file
-* Integrate Docker build as a Github Action
-* Setup a hook to build on merges to `master` and tag the master build with a new version each time (probably from a __version__ file). 
-
-## Compile
-
- * Linux (uses a Makefile)
-	- To build this on linux, pull the repo down locally and ensure that pdflatex is installed.
-	- Run make all && make-keep-pdf
-
- * Windows (uses a Powershell script)
-	- To build this on your windows machine, pull the repo down locally and ensure that pdflatex and SumatraPDF are installed.
-	- In a powershell session, run this invocation in the resume directory: _make_resume.ps1 "N"_
-
-### Setup Notepad++ Shortcut
-
- _these are really just notes for myself for when I inevitably have to setup another Notepad++ shortcut_
- 
- 1. Select Run from the toolbar (or strike F5) 
-
-![Select Run](/screenshot/create_npp_shortcut_1.png)
-
-2. Input the following one-liner, giving the path to where the .ps1 script is located:
-
-```powershell.exe -file "D:\repos\mdcv\make-resume.ps1"```
-
-![Input script one-liner](/screenshot/create_npp_shortcut_2.png)
-
-3. Set Shortcut Parameters (including keystrokes)
-
-![Shortcut Parameters](/screenshot/create_npp_shortcut_3.png)
-
+It's a stupid-simple process but, honestly, that's how I want it to work (when it comes to my CV).
